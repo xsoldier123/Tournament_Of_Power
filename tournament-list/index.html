@@ -5,43 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tournament Of Power Team List</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: url('peakpx.jpg');
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 0;
-            margin: 0;
-        }
-        h2 {
-        	color: white;
-            text-shadow: 2px 2px 5px gray;
-        }
-        table {
-            width: 90%;
-            margin: auto;
-            border-collapse: collapse;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: brightness(10%);
-            border-radius: 5px;
-        }
-        th, td {
-            border: 1px solid blue;
-            padding: 10px;
-            text-align: center;
-        }
-        thead {
-            background: rgba(0, 0, 0, 0.3);
-            font-size: 0.8em;
-        }
-        tbody {
-        	font-size: 0.5em;
-        	}
-        tbody tr:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transition: 0.3s;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: url('peakpx.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 5px gray;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: separate; /* Fix */
+    border-spacing: 0; /* Ensure no gaps */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: brightness(10%);
+    border-radius: 15px;
+    overflow: hidden; /* Fix */
+}
+
+/* Fix for rounded corners */
+thead tr:first-child th:first-child {
+    border-top-left-radius: 15px;
+}
+thead tr:first-child th:last-child {
+    border-top-right-radius: 15px;
+}
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+th, td {
+    border: 1px solid blue;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 0.8em;
+}
+
+tbody {
+    font-size: 0.5em;
+}
+
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
         input {
             width: 50%;
             padding: 8px;
