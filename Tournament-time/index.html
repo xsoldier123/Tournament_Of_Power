@@ -22,16 +22,15 @@ h2 {
 
 table {
     width: 90%;
-    margin: auto;
-    border-collapse: separate; /* Fix */
-    border-spacing: 0; /* Ensure no gaps */
+    margin: 10px auto;
+    border-collapse: separate;
+    border-spacing: 0;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: brightness(10%);
     border-radius: 15px;
-    overflow: hidden; /* Fix */
+    overflow: hidden;
 }
 
-/* Fix for rounded corners */
 thead tr:first-child th:first-child {
     border-top-left-radius: 15px;
 }
@@ -46,6 +45,7 @@ tbody tr:last-child td:last-child {
 }
 
 th, td {
+	width: 30%;
     border: 1px solid blue;
     padding: 10px;
     text-align: center;
@@ -53,11 +53,15 @@ th, td {
 
 thead {
     background: rgba(0, 0, 0, 0.3);
-    font-size: 1.2em;
+    font-size: 1em;
+}
+
+.title {
+	font-weight: bold;
 }
 
 tbody {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 tbody tr:hover {
@@ -75,8 +79,10 @@ tbody tr:hover {
                 <td colspan="3"><b>Round 1 Team Verses Team List</b></td>
         </thead>
         <tbody id="tableBody">
+      </table>
+      <table>
         	<tr>
-            	<td colspan="3">01/03/2025 Saturday After Asr</td>
+            	<td colspan="3" class="title">01/03/2025 Saturday After Asr</td>
             </tr>
             <tr>
             <tr>
@@ -90,7 +96,9 @@ tbody tr:hover {
                 <td>Frieza Squad</td>
             </tr>
             <tr>
-            	<td colspan="3">01/03/2025 Saturday After Maghrib</td>
+        </table>
+        <table>
+            	<td colspan="3" class="title">01/03/2025 Saturday After Maghrib</td>
             </tr>
             <tr>
                 <td>Jodest</td>
@@ -103,7 +111,9 @@ tbody tr:hover {
                 <td>Gangster</td>
             </tr>
             <tr>
-            	<td colspan="3">02/03/2025 Sunday After Asr</td>
+        </table>
+        <table>
+            	<td colspan="3" class="title">02/03/2025 Sunday After Asr</td>
             </tr>
             <tr>
             <tr>
@@ -117,7 +127,9 @@ tbody tr:hover {
                 <td>HEADHUNTER</td>
             </tr>
             <tr>
-            	<td colspan="3">02/03/2025 Sunday After Maghrib</td>
+        </table>
+        <table>
+            	<td colspan="3" class="title">02/03/2025 Sunday After Maghrib</td>
             </tr>
             <tr>
                 <td>VIP</td>
